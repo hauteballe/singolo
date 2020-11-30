@@ -1,11 +1,11 @@
 /* side-menu */
 
-function burgerClickHandler(ev) {
+function burgerClickHandler() {
     let popup = document.getElementsByClassName('menu-popup')[0];
     popup.style.display = 'block';
 }
 
-function closeSideMenu(ev) {
+function closeSideMenu() {
     let popup = document.getElementsByClassName('menu-popup')[0];
     popup.style.display = 'none';
 }
@@ -120,25 +120,9 @@ let slider = Slider('.slider')
 
 /* portfolio-tabs */
 
-let images = [
-    "assets/img/portfolio-1.png",              
-    "assets/img/portfolio-2.png",
-    "assets/img/portfolio-3.png",
-    "assets/img/portfolio-4.png",
-    "assets/img/portfolio-5.png",
-    "assets/img/portfolio-6.png",
-    "assets/img/portfolio-7.png",
-    "assets/img/portfolio-8.png",
-    "assets/img/portfolio-9.png",
-    "assets/img/portfolio-10.png",
-    "assets/img/portfolio-11.png",
-    "assets/img/portfolio-12.png",
-    "assets/img/portfolio-10.png",
-    "assets/img/portfolio-11.png",
-    "assets/img/portfolio-12.png"
-]
 
-function choose(choices) {
+
+function chooseRandomItem(choices) {
     var index = Math.floor(Math.random() * choices.length);
     return choices[index];
   }
@@ -148,7 +132,7 @@ function galleryImgShuffle(ev) {
     imagesListWrapper.innerHTML = '';
 
     for (let i = 0; i < 12; i++) {
-        let img = choose(images);
+        let img = chooseRandomItem(images);
         let imgId = `gallery-img-${i}`;
         let imgElement = document.createElement('img');
         imgElement.id = imgId;

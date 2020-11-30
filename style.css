@@ -1,12 +1,6 @@
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
-}
-
-body {
+  scroll-behavior: smooth;
   margin: 0px;
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
@@ -44,7 +38,7 @@ header .row {
   letter-spacing: -0.03em;
 }
 
-.logo h1 span {
+.logo-symbol {
   color: #f06c64;
 }
 
@@ -236,6 +230,7 @@ nav a:hover {
   font-size: 12px;
   padding: 5px;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .filter-list-item:hover {
@@ -347,7 +342,7 @@ footer {
   margin-left: 28.5px;
 }
 
-.side-logo h1 {
+.side-logo h2 {
   font-size: 19.6875px;
   font-weight: bold;
   text-transform: uppercase;
@@ -356,7 +351,7 @@ footer {
   letter-spacing: -0.03em;
 }
 
-.side-logo h1 span {
+.logo-symbol {
   color: #f06c64;
 }
 
